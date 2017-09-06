@@ -1,0 +1,131 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACK	rdma.h	/^enum BufferType {ACK, MESSAGE, TENSOR};$/;"	e	enum:rdma::BufferType
+Accept	rdma_mgr.cc	/^void RdmaMgr::Accept(int sock){$/;"	f	class:rdma::RdmaMgr
+BufferIndexNameTable	rdma_channel.h	/^typedef std::unordered_map<uint32_t, string> BufferIndexNameTable;$/;"	t	class:rdma::RdmaChannel
+BufferNameIndexTable	rdma_channel.h	/^typedef std::unordered_map<string, uint32_t> BufferNameIndexTable;$/;"	t	class:rdma::RdmaChannel
+BufferStatus	rdma.h	/^enum BufferStatus {none, idle, busy};$/;"	g	namespace:rdma
+BufferTable	rdma_channel.h	/^typedef std::unordered_map<unsigned int, RdmaBuffer*> BufferTable;$/;"	t	class:rdma::RdmaChannel
+BufferType	rdma.h	/^enum BufferType {ACK, MESSAGE, TENSOR};$/;"	g	namespace:rdma
+CallbackTable	rdma_channel.h	/^typedef std::unordered_map<std::string,std::function<void(char*)>> CallbackTable;$/;"	t	class:rdma::RdmaChannel
+Connect	rdma_channel.cc	/^void RdmaChannel::Connect(RdmaAddress& remoteAddr) {$/;"	f	class:rdma::RdmaChannel
+Connect	rdma_mgr.cc	/^void RdmaMgr::Connect(const char* ip,int port){$/;"	f	class:rdma::RdmaMgr
+CreateCPUBuffer	rdma_buffer.cc	/^void RdmaBuffer::CreateCPUBuffer(size_t size){$/;"	f	class:rdma::RdmaBuffer
+EnqueueItem	rdma_buffer.cc	/^void RdmaBuffer::EnqueueItem(std::string item){$/;"	f	class:rdma::RdmaBuffer
+FindBuffer	rdma_channel.cc	/^RdmaBuffer* RdmaChannel::FindBuffer(const string& name) {$/;"	f	class:rdma::RdmaChannel
+FindBuffer	rdma_channel.cc	/^RdmaBuffer* RdmaChannel::FindBuffer(const uint32_t index) {$/;"	f	class:rdma::RdmaChannel
+FindOrCreateBuffer	rdma_channel.cc	/^RdmaBuffer* RdmaChannel::FindOrCreateBuffer(const string& name, BufferType buffer_type) {$/;"	f	class:rdma::RdmaChannel
+FreeBuffer	rdma_buffer.cc	/^void RdmaBuffer::FreeBuffer(){$/;"	f	class:rdma::RdmaBuffer
+InitRng	rdma_channel.cc	/^std::mt19937_64* InitRng() {$/;"	f	namespace:rdma
+InsertRecvCallback	rdma_channel.cc	/^void RdmaChannel::InsertRecvCallback(std::string& key,std::function<void(char*)> recv_done) {$/;"	f	class:rdma::RdmaChannel
+Listen	rdma_mgr.cc	/^int RdmaMgr::Listen(int port){$/;"	f	class:rdma::RdmaMgr
+Location	rdma.h	/^enum Location {local, remote};$/;"	g	namespace:rdma
+LookupBufferIndex	rdma_buffer.h	/^  uint32_t LookupBufferIndex(const string& buffer_name){$/;"	f	class:rdma::RdmaBuffer
+LookupBufferIndex	rdma_channel.cc	/^uint32_t RdmaChannel::LookupBufferIndex(const string& buffer_name){$/;"	f	class:rdma::RdmaChannel
+MAX_CONCURRENT_WRITES	rdma_adapter.h	/^  static const int MAX_CONCURRENT_WRITES = 1000;$/;"	m	class:rdma::RdmaAdapter
+MESSAGE	rdma.h	/^enum BufferType {ACK, MESSAGE, TENSOR};$/;"	e	enum:rdma::BufferType
+New64	rdma_channel.cc	/^uint64 New64() {$/;"	f	namespace:rdma
+Process_CQ	rdma_adapter.cc	/^void RdmaAdapter::Process_CQ() {$/;"	f	class:rdma::RdmaAdapter
+RdmaAckBuffer	rdma_buffer.cc	/^RdmaAckBuffer::RdmaAckBuffer(RdmaChannel* channel, string name)$/;"	f	class:rdma::RdmaAckBuffer
+RdmaAdapter	rdma_adapter.cc	/^RdmaAdapter::RdmaAdapter()$/;"	f	class:rdma::RdmaAdapter
+RdmaAdapter	rdma_adapter.h	/^class RdmaAdapter {$/;"	c	namespace:rdma
+RdmaAddress	rdma.h	/^struct RdmaAddress {$/;"	s	namespace:rdma
+RdmaBuffer	rdma_buffer.cc	/^RdmaBuffer::RdmaBuffer(RdmaChannel* channel,string name)$/;"	f	class:rdma::RdmaBuffer
+RdmaBuffer	rdma_buffer.h	/^class RdmaBuffer {$/;"	c	namespace:rdma
+RdmaChannel	rdma_channel.cc	/^RdmaChannel::RdmaChannel(const RdmaAdapter* adapter)$/;"	f	class:rdma::RdmaChannel
+RdmaChannel	rdma_channel.h	/^class RdmaChannel{$/;"	c	namespace:rdma
+RdmaMessageBuffer	rdma_buffer.cc	/^RdmaMessageBuffer::RdmaMessageBuffer(RdmaChannel* channel, string name)$/;"	f	class:rdma::RdmaMessageBuffer
+RdmaMgr	rdma_mgr.cc	/^RdmaMgr::RdmaMgr(){$/;"	f	class:rdma::RdmaMgr
+RdmaMgr	rdma_mgr.h	/^class RdmaMgr {$/;"	c	namespace:rdma
+RdmaTensorBuffer	rdma_buffer.cc	/^RdmaTensorBuffer::RdmaTensorBuffer(RdmaChannel* channel, string name)$/;"	f	class:rdma::RdmaTensorBuffer
+Receive	rdma_mgr.cc	/^void RdmaMgr::Receive(std::function<void(char*)> recv_done){$/;"	f	class:rdma::RdmaMgr
+Recv	rdma_channel.cc	/^void RdmaChannel::Recv() {$/;"	f	class:rdma::RdmaChannel
+RemoteMR	rdma.h	/^struct RemoteMR{$/;"	s	namespace:rdma
+RemoveRecvCallback	rdma_channel.cc	/^void RdmaChannel::RemoveRecvCallback(const std::string& key) {$/;"	f	class:rdma::RdmaChannel
+RunRecvCallback	rdma_channel.cc	/^void RdmaChannel::RunRecvCallback(const std::string& key) {$/;"	f	class:rdma::RdmaChannel
+Send	rdma_mgr.cc	/^void RdmaMgr::Send(char* data){$/;"	f	class:rdma::RdmaMgr
+SendNextItem	rdma_buffer.cc	/^void RdmaAckBuffer::SendNextItem() {$/;"	f	class:rdma::RdmaAckBuffer
+SendNextItem	rdma_buffer.cc	/^void RdmaMessageBuffer::SendNextItem() {$/;"	f	class:rdma::RdmaMessageBuffer
+SendNextItem	rdma_buffer.cc	/^void RdmaTensorBuffer::SendNextItem() {$/;"	f	class:rdma::RdmaTensorBuffer
+SetBufferStatus	rdma_buffer.h	/^  inline void SetBufferStatus(Location loc, BufferStatus status){$/;"	f	class:rdma::RdmaBuffer
+SetRemoteAddress	rdma_channel.cc	/^void RdmaChannel::SetRemoteAddress(RdmaAddress ra) {$/;"	f	class:rdma::RdmaChannel
+SetRemoteMR	rdma_buffer.cc	/^void RdmaBuffer::SetRemoteMR(RemoteMR rmr) {$/;"	f	class:rdma::RdmaBuffer
+SetupChannels	rdma_mgr.cc	/^void RdmaMgr::SetupChannels(int sock){$/;"	f	class:rdma::RdmaMgr
+TENSOR	rdma.h	/^enum BufferType {ACK, MESSAGE, TENSOR};$/;"	e	enum:rdma::BufferType
+Thread	rdma_adapter.h	/^  Thread(std::function<void()> fn)$/;"	f	class:rdma::Thread
+Thread	rdma_adapter.h	/^class Thread {$/;"	c	namespace:rdma
+Write	rdma_buffer.cc	/^void RdmaBuffer::Write(uint32_t imm_data, size_t buffer_size) {$/;"	f	class:rdma::RdmaBuffer
+_RDMA_ADAPTER_H_	rdma_adapter.h	2;"	d
+_RDMA_BUFFER_H_	rdma_buffer.h	2;"	d
+_RDMA_CHANNEL_H_	rdma_channel.h	2;"	d
+_RDMA_H_	rdma.h	2;"	d
+_RDMA_MGR_H_	rdma_mgr.h	2;"	d
+adapter_	rdma_channel.h	/^const RdmaAdapter* adapter_;$/;"	m	class:rdma::RdmaChannel
+alloc_protection_domain	rdma_adapter.cc	/^ibv_pd* alloc_protection_domain(ibv_context* context) {$/;"	f	namespace:rdma
+buffer	rdma_buffer.h	/^  inline void* buffer() const { return buffer_; }$/;"	f	class:rdma::RdmaBuffer
+buffer_	rdma_buffer.h	/^  void* buffer_;$/;"	m	class:rdma::RdmaBuffer
+buffer_index_name_table_	rdma_channel.h	/^BufferIndexNameTable buffer_index_name_table_;$/;"	m	class:rdma::RdmaChannel
+buffer_name_index_table_	rdma_channel.h	/^BufferNameIndexTable buffer_name_index_table_;$/;"	m	class:rdma::RdmaChannel
+buffer_table_	rdma_channel.h	/^BufferTable buffer_table_;$/;"	m	class:rdma::RdmaChannel
+busy	rdma.h	/^enum BufferStatus {none, idle, busy};$/;"	e	enum:rdma::BufferStatus
+callback_table_	rdma_channel.h	/^CallbackTable callback_table_;$/;"	m	class:rdma::RdmaChannel
+channel_	rdma_buffer.h	/^  const RdmaChannel* channel_;$/;"	m	class:rdma::RdmaBuffer
+connected_	rdma_channel.h	/^bool connected_;$/;"	m	class:rdma::RdmaChannel
+context_	rdma_adapter.h	/^  ibv_context* context_;$/;"	m	class:rdma::RdmaAdapter
+cq_	rdma_adapter.h	/^  ibv_cq* cq_;$/;"	m	class:rdma::RdmaAdapter
+event_channel_	rdma_adapter.h	/^  ibv_comp_channel* event_channel_;$/;"	m	class:rdma::RdmaAdapter
+idle	rdma.h	/^enum BufferStatus {none, idle, busy};$/;"	e	enum:rdma::BufferStatus
+kNumMessageBuffers	rdma_channel.h	/^static const int kNumMessageBuffers = 4;$/;"	m	class:rdma::RdmaChannel
+lid	rdma.h	/^      uint32_t lid;$/;"	m	struct:rdma::RdmaAddress
+local	rdma.h	/^enum Location {local, remote};$/;"	e	enum:rdma::Location
+local_status_	rdma_buffer.h	/^  BufferStatus local_status_;$/;"	m	class:rdma::RdmaBuffer
+message_buffers	rdma_channel.h	/^inline const std::vector<RdmaBuffer*>& message_buffers()const{$/;"	f	class:rdma::RdmaChannel
+message_buffers_	rdma_channel.h	/^std::vector<RdmaBuffer*> message_buffers_;$/;"	m	class:rdma::RdmaChannel
+name_	rdma_buffer.h	/^  const std::string name_;$/;"	m	class:rdma::RdmaBuffer
+none	rdma.h	/^enum BufferStatus {none, idle, busy};$/;"	e	enum:rdma::BufferStatus
+open_default_device	rdma_adapter.cc	/^ibv_context* open_default_device() {$/;"	f	namespace:rdma
+pd_	rdma_adapter.h	/^  ibv_pd* pd_;$/;"	m	class:rdma::RdmaAdapter
+psn	rdma.h	/^      uint32_t psn;$/;"	m	struct:rdma::RdmaAddress
+qp_	rdma_channel.h	/^ibv_qp* qp_;$/;"	m	class:rdma::RdmaChannel
+qpn	rdma.h	/^      uint32_t qpn;$/;"	m	struct:rdma::RdmaAddress
+queue_	rdma_buffer.h	/^  std::queue <std::string> queue_ ;$/;"	m	class:rdma::RdmaBuffer
+rc_	rdma_mgr.h	/^  RdmaChannel* rc_;$/;"	m	class:rdma::RdmaMgr
+rdma	rdma.h	/^namespace rdma{$/;"	n
+rdma	rdma_adapter.cc	/^namespace rdma{$/;"	n	file:
+rdma	rdma_adapter.h	/^namespace rdma {$/;"	n
+rdma	rdma_buffer.cc	/^namespace rdma{$/;"	n	file:
+rdma	rdma_buffer.h	/^namespace rdma {$/;"	n
+rdma	rdma_channel.cc	/^namespace rdma{$/;"	n	file:
+rdma	rdma_channel.h	/^namespace rdma {$/;"	n
+rdma	rdma_mgr.cc	/^namespace rdma{$/;"	n	file:
+rdma	rdma_mgr.h	/^namespace rdma{$/;"	n
+rdma_adapter_	rdma_mgr.h	/^  RdmaAdapter* rdma_adapter_;$/;"	m	class:rdma::RdmaMgr
+remote	rdma.h	/^enum Location {local, remote};$/;"	e	enum:rdma::Location
+remote_	rdma_buffer.h	/^  RemoteMR remote_;$/;"	m	class:rdma::RdmaBuffer
+remote_	rdma_channel.h	/^RdmaAddress remote_;$/;"	m	class:rdma::RdmaChannel
+remote_addr	rdma.h	/^    uint64_t remote_addr;$/;"	m	struct:rdma::RemoteMR
+remote_set_	rdma_channel.h	/^bool remote_set_;$/;"	m	class:rdma::RdmaChannel
+remote_status_	rdma_buffer.h	/^  BufferStatus remote_status_;$/;"	m	class:rdma::RdmaBuffer
+rkey	rdma.h	/^    uint32_t rkey;$/;"	m	struct:rdma::RemoteMR
+rx_ack_buffer_	rdma_channel.h	/^RdmaBuffer* rx_ack_buffer_;$/;"	m	class:rdma::RdmaChannel
+rx_message_buffer_	rdma_channel.h	/^RdmaBuffer* rx_message_buffer_;$/;"	m	class:rdma::RdmaChannel
+self	rdma_buffer.h	/^  inline ibv_mr* self() const { return self_; }$/;"	f	class:rdma::RdmaBuffer
+self	rdma_channel.h	/^inline const RdmaAddress& self(){return self_;}$/;"	f	class:rdma::RdmaChannel
+self_	rdma_buffer.h	/^  ibv_mr* self_;$/;"	m	class:rdma::RdmaBuffer
+self_	rdma_channel.h	/^RdmaAddress self_;$/;"	m	class:rdma::RdmaChannel
+size_	rdma_buffer.h	/^  size_t size_ ;$/;"	m	class:rdma::RdmaBuffer
+thread_	rdma_adapter.h	/^  Thread* thread_;$/;"	m	class:rdma::RdmaAdapter
+thread_	rdma_adapter.h	/^  std::thread thread_;$/;"	m	class:rdma::Thread
+tx_ack_buffer_	rdma_channel.h	/^RdmaBuffer* tx_ack_buffer_;$/;"	m	class:rdma::RdmaChannel
+tx_message_buffer_	rdma_channel.h	/^RdmaBuffer* tx_message_buffer_;$/;"	m	class:rdma::RdmaChannel
+uint64	rdma_channel.cc	/^typedef unsigned long long uint64;$/;"	t	namespace:rdma	file:
+wc_	rdma_adapter.h	/^  ibv_wc wc_[MAX_CONCURRENT_WRITES * 2];$/;"	m	class:rdma::RdmaAdapter
+~RdmaAdapter	rdma_adapter.cc	/^RdmaAdapter::~RdmaAdapter() {$/;"	f	class:rdma::RdmaAdapter
+~RdmaBuffer	rdma_buffer.cc	/^RdmaBuffer::~RdmaBuffer(){$/;"	f	class:rdma::RdmaBuffer
+~RdmaChannel	rdma_channel.cc	/^RdmaChannel::~RdmaChannel(){$/;"	f	class:rdma::RdmaChannel
+~RdmaMgr	rdma_mgr.cc	/^RdmaMgr::~RdmaMgr() {$/;"	f	class:rdma::RdmaMgr
+~Thread	rdma_adapter.h	/^  ~Thread() { thread_.join(); }$/;"	f	class:rdma::Thread
